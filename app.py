@@ -34,7 +34,7 @@ df_filtered = df.query(query)
 
 # create the plot
 title = f"{metric_labels[metric]} for countries in {continent}"
-fig = px.line(df_filtered, x='year', y='value', color='country', title=title, labels={"value": f"{metric_labels[metric]}")
+fig = px.line(df_filtered, x='year', y='value', color='country', title=title, labels={"value": f"{metric_labels[metric]}"})
 
 # display the plot
 st.plotly_chart(fig, use_container_width=True)
